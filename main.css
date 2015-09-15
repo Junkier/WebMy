@@ -1,0 +1,149 @@
+#topBlcok{
+	/* block */
+	width:100%;
+	height:110px;
+	border:1px solid black;
+	
+	/* font */
+	font: normal 35px Comic Sans MS;
+	color:#f00;
+	text-align:center;
+	line-height:110px;
+}
+
+
+
+
+#ground{
+	position:absolute;
+	top:100px;
+	z-index:-2;
+	
+	background: url(cake.jpg) no-repeat center center fixed;
+    border:1px solid black;
+    -webkit-background-size: cover;
+    -webkit-filter: brightness(0.7);
+	
+    width:100%;
+    height:350px;
+    margin-top: 10px ;
+}
+
+#context{
+	position:relative;
+	top:20px;
+	z-index:3; 
+	font: normal 35px Comic Sans MS;
+	color:#ddd;
+	text-align:center;
+	line-height:50px;
+	/*border:1px solid red;*/
+	width:500px;
+	height:120px;
+	margin:100px auto;
+}
+
+#userEmail{
+	font:normal 25px Tahoma;
+	
+	width:300px;
+	height:40px;
+	background-color:#ccc;
+}
+
+/* CakeA*/
+
+#nameButton{
+	border-right: 2px solid black;
+	border-radius:10px;
+	background-color:#4682b4;
+	color:#eee;
+	width:120px;
+	height:80px;
+	line-height:80px;
+	margin:200px auto;
+	margin-left:250px;
+	box-shadow: #2662a4 1px 7px 1px;
+	float:left;
+	transition: color 0.5s;
+}
+
+#movingButton{
+	/*border-top: 3px solid #000;*/
+	background-color:#ddeeee;
+	width:10px;
+	height:65px;
+	margin:210px auto;
+
+	box-shadow: #c0d0d0 1px 7px 1px;
+	float:left;
+	transition:  width 1.5s;
+}
+
+#pictureButton{
+	/*border: 1px	solid black;*/
+	width:255px;
+	height:70px;
+	margin-left:3px;
+	color:#666;
+	float:left;
+	transition:  width 1s ,height 1s , color 1.5s , background-color 1s ;
+	           
+	
+}
+
+#signalButton{
+	border-right: 2px solid #222;
+	border-left: 1px solid #222;
+	background-color:#86c2f4;
+	border-radius:10px;
+	margin:200px auto;
+	box-shadow: #5692c4 1px 7px 1px;
+	width:40px;
+	height:85px;
+	float:left;
+}
+
+
+
+
+#nameButton:hover{
+	color:#000;
+}
+
+#signalButton:hover{
+	background-color:#9fdfff;
+}
+
+#Site{
+	border:5px solid red;
+	border-radius:10px;
+	background-color:#ddd;
+	width:150px;
+	height:80px;
+	margin:200px auto;
+	transition: background-color 1s;
+}
+
+#Body{
+	
+	margin:0px;
+	background-color:#ddd;
+	transition: background-color 1s;
+	
+}
+
+#myCakeA{
+	transition: opacity 1s;
+	opacity:0;
+}
+
+
+
+
+
+div{
+	font:normal 32px Tahoma;
+	text-align:center;
+	line-height:70px;
+}
