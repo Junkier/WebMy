@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="main.css">
+		<script src="new.js"></script>
+		<script src="Sleep.js"></script>
+		<title>Cake Icon</title>
+	</HEAD>
+	<BODY id = 'Body'>
+	<header id = "topBlcok"> 
+	0123
+	</header>
+	        <div id = "context"> 
+	    	Choose Your Favorite Cake!!
+		    <input type = "text" value=""  placeholder="Email" id = "userEmail">
+    		</div>
+    	    <div id = "ground">
+		
+        	</div>
+		<div id = "nameButton">
+		 Cake A
+		</div>
+		
+	    	<div id = "movingButton">
+		         <div id = "pictureButton">
+		    	 picture
+		     	 <img id ="myCakeA" src="">
+		     </div>
+     		</div>
+	    	<div id = "signalButton"></div>
+	    	<div style="clear:both;"></div>
+	    	<div id = "Site"></div>
+	</BODY>
+</HTML>
