@@ -1,0 +1,13 @@
+.topBar{
+	margin:100px 30%;
+}
+
+.context{
+	width:200px;
+	height:200px;
+	float:left;		
+	font:normal 40px Tahoma;
+	text-align:center;	
+	line-height:200px;
+}
+		

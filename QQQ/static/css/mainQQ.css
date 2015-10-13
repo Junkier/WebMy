@@ -1,0 +1,28 @@
+div,input{
+	font:normal 22px Tahoma;
+}
+
+.Field{
+	width:200px;
+	height:200px;
+	margin:0px auto;
+	float:left;
+	font:normal 22px Tahoma;
+	text-align:center;
+	line-height:200px;
+	
+}
+
+section,header{
+	margin-left:30%;
+}
+
+header{
+	margin-top:50px;
+}
+
+button{
+	width:50px;
+	height:30px;
+}
+

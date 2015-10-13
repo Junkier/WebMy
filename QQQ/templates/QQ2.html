@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="{{STATIC_URL}}css/mainQQ.css">
+		<!-- JQuery CDN ↓ 必++ -->
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<script src = "{{STATIC_URL}}js/jquery-1.11.3.min.js"></script>
+		<script src="{{STATIC_URL}}js/jquery.cookie.js"></script>
+		<!-- <script src ="{{STATIC_URL}}js/callback.js"></script> -->
+		<script src="{{STATIC_URL}}js/test.js"></script>
+		<script>
+		function csrfSafeMethod(method) {
+		// these HTTP methods do not require CSRF protection
+		return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+		}
+		$.ajaxSetup({
+			beforeSend: function(xhr, settings) {
+			if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+					xhr.setRequestHeader("X-CSRFToken", $.cookie('csrftoken'));
+				}
+			}
+		});
+		</script>
+		<title>Web Server Test !!!!</title>
+	</HEAD>
+	<BODY>	
+		{% for ele in excuse_html %}
+		{{ ele }}
+		<br>
+		{% endfor%}
+
+		<header>
+			<div class="Field" style="border:1px solid red;" id = "Name">Name</div>
+			<div class="Field" style="border:1px solid blue;" id = "Job">Job</div>
+			<div class="Field" style="border:1px solid green;" id = "Sal">Sal</div>
+			<div style="clear:both;"></div>
+		</header>
+		
+		<section>
+	
+		<h2>Search Empno:</h2> <input type="text" name="QQ" value="Empno" > 
+		<button> GO!! </button>
+		<br>
+		<h2>Show the data:</h2> <textarea rows="10" cols="50" ></textarea>
+		<!-- <form action="." method="post">{% csrf_token %} -->
+		</section>
+	
+	</BODY>
+		
+</HTML>
+<!--template.html-->

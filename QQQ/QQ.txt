@@ -1,0 +1,36 @@
+Emp.objects.create(Empno = '7700',
+	Ename = 'JeffSheng',
+	Job   = 'CEO',
+	Sal   = '25000',
+	)
+
+
+Emp.objects.create(Empno = '7800',
+	Ename = 'Kevin',
+	Job   = 'Sales',
+	Sal   = '2500',
+	Comm  = '500')
+	
+Emp.objects.create(Empno = '7810',
+	Ename = 'Bob',
+	Job   = 'King',
+	Sal   = '2200',
+	Comm  = '200')
+	
+Emp.objects.create(Empno = '7820',
+	Ename = 'Strurt',
+	Job   = 'GuitarPlayer',
+	Sal   = '4500',
+	)
+	
+Emp.objects.create(Empno = '7900',
+	Ename = 'Apple',
+	Job   = 'Accountant',
+	Sal   = '3400',
+	Comm  = '1500')
+	
+Emp.objects.create(Empno = '7910',
+	Ename = 'Skipper',
+	Job   = 'Penguin',
+	Sal   = '5500',
+	Comm  = '500')

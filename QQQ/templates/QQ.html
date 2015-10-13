@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<HTML>
+ 	<HEAD>
+     	<meta charset="UTF-8">
+		<link rel="stylesheet" href="{{STATIC_URL}}css/main.css">
+		<!-- JQuery CDN ↓ 必++ -->
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+		<script src = "{{STATIC_URL}}js/jquery-1.11.3.min.js"></script>
+		<script src ="{{STATIC_URL}}js/callback.js"></script>
+		<title>Web Server Test !!!!</title>
+	</HEAD>
+	<BODY>	
+		{{excuse}}
+	
+		
+		<header class="topBar">	
+				<div  class="context" id = "Title" style = "border:1px solid red;">Name</div>
+				<div  class="context" id = "Explaination" style = "border:1px solid blue;">Number</div>
+				<div  class = "context" id = "Excuse" style = "border:1px solid green;font-size:20px;">Job</div>
+				<div style="clear:both;"></div>
+				<h2>Search Name:</h2>  <input type = "text" name = "Ename" value="QQ" style="width:130px;height:20px;margin-top:20px;border:2px solid black;">
+				<button id = "searchButton">Search!!</button>
+				<h2>Other things:</h2> <textarea rows="15" cols="40" id = "showArea"> </textarea>
+		</header>
+	
+	</BODY>
+		
+</HTML>
+<!--template.html-->
