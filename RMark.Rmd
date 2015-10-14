@@ -1,0 +1,33 @@
+---
+title: "R_Studio"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+library("plyr", lib.loc="~/R/win-library/3.2")
+library("dplyr", lib.loc="~/R/win-library/3.2")
+library("ggmap", lib.loc="~/R/win-library/3.2")
+library("jsonlite", lib.loc="~/R/win-library/3.2")
+url='http://data.taipei/opendata/datalist/apiAccess?scope=resourceAquire&rid=ddb80380-f1b3-4f8e-8016-7ed9cba571d5'
+data = fromJSON(url)
+
+asFrame = do.call('rbind.fill',lapply(data,as.data.frame))
+asFrame$results.lat = as.numeric(asFrame$results.lat)
+asFrame$results.lng = as.numeric(asFrame$results.lng)
+
+dhanmap1 = get_map(location = c(lon=121.525278 , lat= 25.043044),zoom=16,maptype='roadmap',source='google')
+ggmap(dhanmap1) +
+geom_point(aes(x=results.lng , y=results.lat,alpha=1),data=asFrame)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
